@@ -38,7 +38,9 @@ DB_HOSTNAME:
 ### Swagger documentation
 
 Swagger documentation is available at:  
-`http://localhost:9000/docs` 
+`http://localhost:9000/docs`
+
+Note: If no docs found put into Swagger search box `/api-docs` path(it's path where swagger json representation of api available). 
 
 Note: you can execute all the requests from the Swagger UI except upload file request. 
 There is some problem with it - UI receives 403 Forbidden even though if you copy the curl command that it generates - it will work properly.
