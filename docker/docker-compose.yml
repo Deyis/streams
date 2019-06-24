@@ -1,0 +1,27 @@
+version: '2'
+services:
+  app:
+    image: bonify_test:1.0
+    links:
+      - db
+    ports:
+      - "9000:9000"
+    environment:
+      DB_NAME: bankdb
+      DB_USERNAME: pguser
+      DB_PASSWORD: pguser
+      DB_HOSTNAME: db
+  db:
+    image: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: bankdb
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pguser
+
+volumes:
+  db-data:
+    driver: local
