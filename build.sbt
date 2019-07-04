@@ -29,7 +29,7 @@ resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 resolvers += "Akka Snapshot Repository" at "http://repo.akka.io/snapshots/"
 resolvers += "Sonatype Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
       
-scalaVersion := "2.12.2"
+scalaVersion := "2.12.8"
 
 testTagsToExecute := "DockerComposeTestTag"
 testExecutionExtraConfigTask := Map("filesrunner.verbose" -> s"true")

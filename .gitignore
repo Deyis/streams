@@ -1,11 +1,14 @@
 logs
 project/project
+project/.bloop
 project/target
 target
 tmp
 .history
 dist
 /.idea
+/.metals
+/.bloop
 /*.iml
 /out
 /.idea_modules
